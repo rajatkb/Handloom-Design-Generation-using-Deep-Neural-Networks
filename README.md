@@ -19,5 +19,6 @@ optional arguments:
 ```  
 
 Run the the script at any target folder to create a dataset out of all the images inside the folder. Augmentation of image includes current colour shifting and inverting of axis and both combined.  
-Todo  
+
+### Todo  
 * add option for resolution change
