@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 
-def parse_folder(folder, augment=False):
+def parse_folder(folder, augment=False , resolution=512):
     i = 1
     train_data=[]
     print("reading "+folder+" !!!")
@@ -13,6 +13,7 @@ def parse_folder(folder, augment=False):
                 if file.split('.')[1] in ('jpg','png','jpeg'):
                     img = cv2.imread(root+'/'+file)
                     img = cv2.cvtColor(img , cv2.COLOR_BGR2RGB)
+                    img = cv2.resize(img , (resolution , resolution))
                     train_data.append(img)
                     if augment:
                         train_data.append(np.flip(img,0))
@@ -39,6 +40,7 @@ if __name__=='__main__':
     parser.add_argument('--tfy', action="store",dest="target_folderY", default='data/Y' , required=True)
     parser.add_argument('--augx', action="store",dest="augmentx", default=False)
     parser.add_argument('--augy', action="store",dest="augmenty", default=False)
+    parser.add_argument('--resolution',action="store",dest="resolution",required = True)
     values = parser.parse_args()
     
     target_folderX = values.target_folderX
@@ -46,8 +48,8 @@ if __name__=='__main__':
     augmentx = values.augmentx
     augmenty = values.augmenty
     
-    X = parse_folder(target_folderX , augmentx)
-    Y = parse_folder(target_folderY , augmenty)
+    X = parse_folder(target_folderX , augmentx , resolution)
+    Y = parse_folder(target_folderY , augmenty , resolution)
     print("X :",X.shape , " Y :" , Y.shape)
     np.save('X.npy',X)
     np.save('Y.npy',Y)
