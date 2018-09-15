@@ -47,7 +47,7 @@ if __name__=='__main__':
     target_folderY = values.target_folderY
     augmentx = values.augmentx
     augmenty = values.augmenty
-    
+    resolution = int(values.resolution)
     X = parse_folder(target_folderX , augmentx , resolution)
     Y = parse_folder(target_folderY , augmenty , resolution)
     print("X :",X.shape , " Y :" , Y.shape)
