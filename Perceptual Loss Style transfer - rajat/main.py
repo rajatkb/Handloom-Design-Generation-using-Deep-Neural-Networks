@@ -122,6 +122,14 @@ class Fast_Style_transfer:
         ## VGG Preprocessing
         return gen_model_output_vgg
 
+    def total_variation_loss(self , x):
+        img_nrows , img_ncols , _ = self.shape
+        a = K.square(x[:, :img_nrows - 1, :img_ncols - 1, :] - x[:, 1:, :img_ncols - 1, :])
+        b = K.square(x[:, :img_nrows - 1, :img_ncols - 1, :] - x[:, :img_nrows - 1, 1:, :])
+        r = self.lambda_tv * K.sum(K.pow(a + b, 1.25))
+        return r
+
+
     def loss_model(self ,generator_input, generator_output , shape, content_image , texture_image):
         
         vgg = self.get_vgg_loss_model(shape)
@@ -145,16 +153,20 @@ class Fast_Style_transfer:
 
         texture_loss = Lambda(self.total_texture_loss , output_shape=(1,) , name='total_texture_loss')(texture_losses)
 
-        model = Model(inputs=[generator_input,content_image,texture_image], outputs =[generator_output, content_loss, texture_loss])
+        total_variation_loss = Lambda(self.total_variation_loss , output_shape=(1,) , name='total_variation_loss')(generator_output)
+
+        model = Model(inputs=[generator_input,content_image,texture_image], outputs =[generator_output, total_variation_loss, content_loss, texture_loss])
 
         return model
 
 
     def __init__(self ,content_image, texture_image, test_folder , shape=(256,256,3) , lr=0.0001 ,chk = -1 , lambda_tv=0, lambda_content = 0 , lambda_texture = 0 , test=False):
         
+        self.shape = shape
         self.checkpoint = chk
         self.lambda_content = lambda_content
         self.lambda_texture = lambda_texture
+        self.lambda_tv = lambda_tv
         self.test_folder = test_folder
 
         inp = Input(shape , name='network_input')
@@ -181,7 +193,7 @@ class Fast_Style_transfer:
             self.loss_model = self.loss_model(gen_model.input,gen_model.output,shape ,content_image , texture_image )
             self.loss_model.summary()
             adam = Adam(lr=lr, beta_1=0.9, beta_2=0.999, epsilon=None)
-            self.loss_model.compile(loss={'content_loss':'mae' , 'total_texture_loss':'mae' , 'scaling_output':'mse'}, optimizer = adam)
+            self.loss_model.compile(loss={'content_loss':'mae' , 'total_texture_loss':'mae' ,'total_variation_loss':'mae', 'scaling_output':'mse'}, optimizer = adam)
             self.gen_model.compile(loss='mae' , optimizer = adam)
         
         if chk > -1:
@@ -212,12 +224,12 @@ class Fast_Style_transfer:
                 if epoch > 0:
                     zero = np.zeros(batch.shape[0])
                     print("log: fitting network for style and content")
-                    self.loss_model.fit(x = batch , y = {'content_loss':zero , 'total_texture_loss':zero , 'scaling_output':batch} ,  batch_size = batch_size , verbose =1 , nb_epoch=1)
+                    self.loss_model.fit(x = batch , y = {'content_loss':zero , 'total_texture_loss':zero ,'total_variation_loss':zero,'scaling_output':batch} ,  batch_size = batch_size , verbose =1 , nb_epoch=1)
                 
-                img = cv2.cvtColor(batch[100] , cv2.COLOR_BGR2RGB)
+                img = cv2.cvtColor(batch[200] , cv2.COLOR_BGR2RGB)
                 cv2.imwrite(test_folder+'/test_image.jpg',img)
                 
-                self.gen_sample(batch[100] , test_folder, epoch)
+                self.gen_sample(batch[200] , test_folder, epoch)
                 self.gen_model.save_weights(test_folder+'/model_epoch'+str(epoch)+'.h5')
 
 
@@ -226,7 +238,7 @@ if __name__=='__main__':
     parser = argparse.ArgumentParser(description='Fast Neural Style Transfer')
     parser.add_argument('--test_name',action="store",dest="test_name",default="test_model")
     parser.add_argument('--bs', action="store",dest="batch_size" , default=8)
-    parser.add_argument('--epoch', action="store",dest="epoch", default=100 )
+    parser.add_argument('--epoch', action="store",dest="epoch", default=100)
     parser.add_argument('--lr', action="store",dest="learning_rate", default=10e-4)
     parser.add_argument('--data',action="store" , dest = "data" , default="../ms_coco_npy")
     parser.add_argument('--chk' , action="store" , dest = "chk" , default=-1)
@@ -234,7 +246,7 @@ if __name__=='__main__':
     parser.add_argument('--lambda_texture' , action="store" , dest="lambda_texture" , default= 1e-4)
     parser.add_argument('--content_image' , action="store" , dest = "content_image" , default="test_content.jpeg")
     parser.add_argument('--texture_image' , action="store" , dest = "texture_image" , default="test_texture.jpg")
-    # parser.add_argument('--lamba_tv',action="store" , dest = "lambda_tv" , default=1e-6)
+    parser.add_argument('--lambda_tv',action="store" , dest = "lambda_tv" , default=1e-6)
 
 
     values = parser.parse_args()
@@ -248,7 +260,7 @@ if __name__=='__main__':
     texture_image = values.texture_image
     test_folder = values.test_name
     data_location = values.data
-
+    lambda_tv = float(values.lambda_tv)
     try:
         print("log: Creating test folder !!")
         os.mkdir(test_folder)
@@ -256,6 +268,6 @@ if __name__=='__main__':
         print("log: Test folder exist")
     # data = data[:-(data.shape[0] % batch_size)]
     # print("Data shape : ",data.shape)
-    model = Fast_Style_transfer(shape=(256,256,3) , lr=learning_rate ,chk = chk , lambda_tv=0, lambda_content = lambda_content , lambda_texture = lambda_texture ,content_image = content_image, texture_image = texture_image, test_folder=test_folder ,test=False)
+    model = Fast_Style_transfer(shape=(256,256,3) , lr=learning_rate ,chk = chk , lambda_tv=lambda_tv, lambda_content = lambda_content , lambda_texture = lambda_texture ,content_image = content_image, texture_image = texture_image, test_folder=test_folder ,test=False)
     model.train(data_location ,  epoch , batch_size)
     
