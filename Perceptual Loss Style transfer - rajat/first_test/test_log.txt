@@ -1,0 +1,13 @@
+1. content : 1 style : 1 pixel : 1 epoch 0-3
+
+2. content : 0 style : 0 pixel : 1 epoch 3 : reverted to original image quickly with washed out colors
+
+3. conetnt : 1e-2 style: 1e-6 epoch 3-5 : running fine but not good enough borders appearing on sides restarting from 5 with new params, by nerfing content loss 
+
+4. content : 1 style : 1 pixel : 1 epoch 3 : restarted from 3
+
+5. Changing network adding reflection padding and restarting
+
+6. Added TV Loss , nothing else to add anymore. all there is to do is configure and play with network
+
+7. Restarted after fixing all errors with content 1e-3 style 1e-6 tv loss 1e-8 and pixel loss 1
