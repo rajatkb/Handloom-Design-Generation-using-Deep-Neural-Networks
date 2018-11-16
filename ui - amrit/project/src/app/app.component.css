@@ -7,7 +7,7 @@
 #landing-div {
     box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.6);
     padding-left: 60px; 
-    background-color: rgba(70, 70, 70, 1);
+    background: rgba(70, 70, 70, 1);
     color: #D4E157;
 }
 

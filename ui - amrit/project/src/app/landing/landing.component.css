@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lobster', sans-serif;
 }
 
 #app-title {
@@ -9,4 +9,5 @@
     margin: 100px auto;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
 }
+
 
