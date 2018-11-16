@@ -1,0 +1,13 @@
+.upload-section {
+    min-height: 70%;
+}
+
+button {
+    min-height: 40px;
+    padding: 5px 20px;
+}
+
+.controls {
+    width: 70%;
+    margin: 0px auto;
+}
