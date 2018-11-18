@@ -1,6 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+#uploaded-image {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  left: 30px;
+}
+
+#notimage, #file-upload-btn, #upload-text, #upload-icon, #start {
+  z-index: 100;
+}
 
 .upload-section {
     min-height: 75%;
