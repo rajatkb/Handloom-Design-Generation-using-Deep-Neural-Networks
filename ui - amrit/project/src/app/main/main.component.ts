@@ -11,7 +11,8 @@ export class MainComponent implements OnInit {
 
   uploadedImage: File;
   uploadedImageURL: any;
-
+  iconHovered:boolean = false;
+  iconActive:boolean = false;
 
   onImageSelect(event: any) {
     if (event.target.files && event.target.files[0]) {
@@ -25,6 +26,14 @@ export class MainComponent implements OnInit {
       }
 
     }
+  }
+
+  onIconHover(event: any) {
+    this.iconActive = true;
+  }
+
+  onIconLeave(event: any) {
+    this.iconActive = false;
   }
 
   onImageDrop(event: any) {

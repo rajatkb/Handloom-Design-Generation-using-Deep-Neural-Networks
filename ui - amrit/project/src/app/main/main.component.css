@@ -7,7 +7,57 @@
   position: absolute;
   z-index: 10;
   top: 30px;
-  left: 30px;
+  left: 40px;
+  display: none;
+}
+
+.icon-text {
+  border-radius: 4px;
+  width: 200px;
+  height: 35px;
+  background-color: #00897B;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  left: 100%;
+  top: 4%;
+}
+
+.text-div {
+  display: none;
+}
+
+.onHover {
+  display: block;
+}
+
+.sidenav {
+  background-color: #00897B;
+  min-height: 100vh;
+  padding: 20px 30px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.upload-div {
+  padding: 5px; 
+}
+
+.icons {
+  font-size: 30px;
+  color: #fff;
+  padding: 12px;
+  margin: 10px -10px;
+  border-radius: 50%;
+}
+
+.icons-exception {
+  padding: 12px 14px;;
+}
+
+.icons:hover {
+  background-color: #fff;
+  color: #00897B;
 }
 
 #notimage, #file-upload-btn, #upload-text, #upload-icon, #start {
@@ -15,18 +65,18 @@
 }
 
 .upload-section {
-    min-height: 75%;
+    min-height: 90%;
     overflow: hidden;
     position: relative;
     width: 100%;
 }
 
 button {
-    min-height: 40px;
     padding: 5px 20px;
     text-align: center;
     margin: 10px auto;
     outline: none;
+    border: none;
 }
 
 .controls {
@@ -51,13 +101,13 @@ button {
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.6);
 }
 
-.left:hover, .right:hover, #file-upload-btn:hover {
+.left:hover, .right:hover, #file-upload-btn:hover, .icon-text:hover {
     transition: all 200ms;
     transform: scale(0.95);
     box-shadow: none;
 }
 
-.left:active, .right:active, #file-upload-btn:active {
+.left:active, .right:active, #file-upload-btn:active, .icon-text:active {
     transition: all 200ms;
     transform: scale(1.1);
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.6);
@@ -111,10 +161,10 @@ p {
 }
 
 #file-drag {
-    height: 500px;
+    height: 600px;
 }
 #start {
-    margin: 120px auto; 
+    margin: 150px auto; 
 }
 
 #file-upload-btn {
@@ -127,9 +177,9 @@ p {
 .uploader {
   display: block;
   clear: both;
-  margin: 20px auto;
+  margin: 1px auto;
   width: 100%;
-  max-width: 97%;
+  max-width: 100%;
   min-height: 100%;
 }
 .uploader label {
