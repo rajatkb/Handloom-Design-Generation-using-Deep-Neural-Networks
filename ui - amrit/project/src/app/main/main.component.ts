@@ -11,8 +11,11 @@ export class MainComponent implements OnInit {
 
   uploadedImage: File;
   uploadedImageURL: any;
-  iconHovered:boolean = false;
-  iconActive:boolean = false;
+  icon1Hovered:boolean = false;
+  icon2Hovered:boolean = false;
+  icon3Hovered:boolean = false;
+  icon4Hovered:boolean = false;
+  imageSelected:boolean = false;
 
   onImageSelect(event: any) {
     if (event.target.files && event.target.files[0]) {
@@ -22,18 +25,36 @@ export class MainComponent implements OnInit {
       reader.readAsDataURL(this.uploadedImage); 
       reader.onload = (event: any) => { 
         this.uploadedImageURL = event.target.result;
-        
+        this.imageSelected = true;
+        console.log(this.imageSelected);
       }
 
     }
   }
 
   onIconHover(event: any) {
-    this.iconActive = true;
+    //this.iconActive = true;
+    let hoveredIcon = event.target.classList[2];
+    if(hoveredIcon == "fa-picture-o")
+      this.icon1Hovered = true;
+    else if(hoveredIcon == "fa-file-code-o")
+      this.icon2Hovered = true;
+    else if(hoveredIcon == "fa-paint-brush")
+      this.icon3Hovered = true;
+    else if(hoveredIcon == "fa-pencil-square-o")
+      this.icon4Hovered = true;
   }
 
   onIconLeave(event: any) {
-    this.iconActive = false;
+    let leftIcon = event.target.classList[2];
+    if(leftIcon == "fa-picture-o")
+      this.icon1Hovered = false;
+    else if(leftIcon == "fa-file-code-o")
+      this.icon2Hovered = false;
+    else if(leftIcon == "fa-paint-brush")
+      this.icon3Hovered = false;
+    else if(leftIcon == "fa-pencil-square-o")
+      this.icon4Hovered = false;
   }
 
   onImageDrop(event: any) {
