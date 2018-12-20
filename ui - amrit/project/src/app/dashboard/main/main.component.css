@@ -1,18 +1,46 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+@import url("../../../../node_modules/bootstrap/dist/css/bootstrap.min.css");
+
 
 #uploaded-image {
   height: 550px;
-  width: 870px;
+  width: 1000px;
   position: absolute;
   z-index: 10;
   top: 30px;
-  left: 40px;
+  left: 30px;
   display: none;
 }
 
 .onImageSelect {
   display: block !important;
+}
+
+.button-controls {
+  text-align: center;
+}
+
+.control-btn {
+  padding: 10px 12px;
+  margin: 5px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #00897B;
+  font-family: 'Raleway';
+  border-radius: 3px; 
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.6);
+  outline: none;
+}
+
+.control-btn:hover {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+.control-btn:active {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.6);
 }
 
 .icon-text {
@@ -27,16 +55,24 @@
 }
 
 #icon-1 {
-  top: 4%;
+  top: 3.5%;
 }
 #icon-2 {
-  top: 17%;
+  top: 16%;
 }
 #icon-3 {
-  top: 30%;
+  top: 28.5%;
 }
 #icon-4 {
-  top: 43%;
+  top: 40.5%;
+}
+
+#icon-5 {
+  top: 52%;
+}
+
+#icon-6 {
+  top: 65%;
 }
 
 .text-div {
@@ -67,6 +103,11 @@
   border-radius: 50%;
 }
 
+.icons-additional {
+  margin: 25px -10px;
+  margin-bottom: 20px;
+}
+
 .icons-exception {
   padding: 12px 14px;;
 }
@@ -78,6 +119,10 @@
 
 #notimage, #file-upload-btn, #upload-text, #upload-icon, #start {
   z-index: 100;
+}
+
+#upload-text {
+  font-family: 'Raleway';
 }
 
 .upload-section {

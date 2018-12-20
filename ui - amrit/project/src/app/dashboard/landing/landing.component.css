@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("../../../../node_modules/bootstrap/dist/css/bootstrap.min.css");
 
 * {
     font-family: 'Lobster', sans-serif;
 }
 
 #app-title {
-    font-size: 14vh;
+    font-size: 10vh;
     margin: 100px auto;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
 }
