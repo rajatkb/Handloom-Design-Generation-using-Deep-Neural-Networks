@@ -46,14 +46,15 @@ We treat generating handloom design as an image to image translation problem whe
 
 ### Todo  
 * ~~add option for resolution change~~
-* ~~Find proper paramters for Faste Neural Style transfer for global learning
-* ~~Use natural images and artistic image to train Network, Use the network to appy style on existing Saree (Normal and Mekhala data)  
-* ~~Use saree data to train to apply style and color of Mekhala dataset on the normal saree dataset
-* ~~Use artistic dataset to train , and use masking technique on hand drawn image for Image-inpainting
-* ~~Use Mekhala sador dataset for image inpainting
-* ~~Test CycleGAN on normal dataset prepare a testing script for our experiments  
-* ~~Test DiscoGAN on normal dataset prepare a testing script for our experiments
-* ~~Test both network for domain transfer
-* ~~make web based pipeline for all operation
+* ~~Find proper paramters for Faste Neural Style transfer for global learning~~
+* ~~Use natural images and artistic image to train Network, Use the network to appy style on existing Saree (Normal and Mekhala data)~~  
+* ~~Use saree data to train to apply style and color of Mekhala dataset on the normal saree dataset~~
+* ~~Use artistic dataset to train , and use masking technique on hand drawn image for Image-inpainting~~
+* ~~Use Mekhala sador dataset for image inpainting~~
+* ~~Test CycleGAN on normal dataset prepare a testing script for our experiments~~  
+* ~~Test DiscoGAN on normal dataset prepare a testing script for our experiments~~
+* ~~Test both network for domain transfer~~
+* ~~make web based pipeline for all operation~~
 * ~~make python server for getting image and serving the processed image back
-* ~~make frontend Angular application
+* make frontend Angular application
+* have the python server interact with the model.predict to get output
