@@ -3,7 +3,9 @@
     padding: 3px;
     background-color: #fff;
     border-radius: 3px;
-    min-height: 100vh; 
+    min-height: 90vh; 
+    max-height: 90vh;
+    overflow: scroll;
 }
 
 .item {

@@ -2,7 +2,7 @@
  <div class="upload-section">
     <div class="row">
       <div class="col-md-1 sidenav"> 
-        <div class="button-div">
+        <div class="button-div" (click)="onIconClicked($event)" id="icon1">
           <div class="icon-div">
             <i class="fa icons fa-file-image-o" (mouseenter)="onIconHover($event)" (mouseleave)="onIconLeave($event)"></i>
           </div>
@@ -10,7 +10,7 @@
             <button class="icon-text button" id="icon-1">Masking via OpenCV</button>
           </div>
         </div><br>
-        <div class="button-div">
+        <div class="button-div" (click)="onIconClicked($event)" id="icon2">
           <div class="icon-div">
             <i class="fa icons fa-file-code-o icons-exception" (mouseenter)="onIconHover($event)" (mouseleave)="onIconLeave($event)"></i>
           </div>
@@ -18,7 +18,7 @@
             <button class="icon-text button" id="icon-2">Masking via GAN</button>
           </div>
         </div><br>
-        <div class="button-div">
+        <div class="button-div" (click)="onIconClicked($event)" id="icon3">
           <div class="icon-div">
             <i class="fa icons fa-paint-brush" (mouseenter)="onIconHover($event)" (mouseleave)="onIconLeave($event)"></i>
           </div>

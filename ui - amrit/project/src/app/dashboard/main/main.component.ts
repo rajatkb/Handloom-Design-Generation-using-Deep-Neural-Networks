@@ -83,23 +83,23 @@ export class MainComponent implements OnInit {
 
   onImageSelect(event: any) {
     if (event.target.files && event.target.files[0]) {
-      
       this.uploadedImage = event.target.files[0];
       this.startUpload(event.target.files);
-
-      
-      this.uploadService.upload(this.uploadedImage).subscribe((res:Object) => {
-          let bytestring = res['status'];
-          let image = bytestring.split('\'')[1];
-          this.uploadedImageURL = 'data:image/jpeg;base64,' + image;
-        }, error => {
-          if(error) {
-            this.flashMessagesService.show("Communication failed",{cssClass: 'custom-danger-alert' , timeOut:7000});
-            console.log(error);
-          }
-      });
     }
 
+  }
+
+  onIconClicked(event: Event) {
+    this.uploadService.upload(this.uploadedImage).subscribe((res:Object) => {
+        let bytestring = res['status'];
+        let image = bytestring.split('\'')[1];
+        this.uploadedImageURL = 'data:image/jpeg;base64,' + image;
+      }, error => {
+        if(error) {
+          this.flashMessagesService.show("Communication failed",{cssClass: 'custom-danger-alert' , timeOut:7000});
+          console.log(error);
+        }
+    });
   }
 
   onIconHover(event: any) {
