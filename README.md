@@ -55,6 +55,6 @@ We treat generating handloom design as an image to image translation problem whe
 * ~~Test DiscoGAN on normal dataset prepare a testing script for our experiments~~
 * ~~Test both network for domain transfer~~
 * ~~make web based pipeline for all operation~~
-* ~~make python server for getting image and serving the processed image back
+* ~~make python server for getting image and serving the processed image back~~
 * make frontend Angular application
 * have the python server interact with the model.predict to get output
