@@ -142,7 +142,8 @@ export class MainComponent implements OnInit {
         this.maskButtonCaption = "Reset to original";
 
         this.uploadService.uploadForMask(this.uploadedImage).subscribe((res:Object) => {
-            let bytestring = res['status'];
+          console.log("log: receiving response for mask")  
+          let bytestring = res['status'];
             let image = bytestring.split('\'')[1];
             //console.log(image);
             this.uploadedImageURL = 'data:image/jpeg;base64,' + image;

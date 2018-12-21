@@ -38,6 +38,7 @@ export class LandingComponent implements OnInit {
     }
     else {
       this.uploadService.uploadForMerge(this.uploadedImage, this.chosenBackground, this.chosenForeground).subscribe((res:Object) => {
+          console.log("log: results recieved , loading results");
           let bytestring = res['status'];
           let image = bytestring.split('\'')[1];
           //console.log(image);
