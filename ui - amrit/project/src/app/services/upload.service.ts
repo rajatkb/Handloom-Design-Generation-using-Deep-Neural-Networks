@@ -1,12 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpRequest, HttpEventType, HttpResponse } from '@angular/common/http';
-import { Subject } from 'rxjs';
-import { Observable } from 'rxjs';
-import { User } from '../models/user.model';
+import { HttpClient } from '@angular/common/http';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { AngularFireDatabase } from 'angularfire2/database';
-import { AuthService } from './auth.service';
 
+//const BASE_URL = 'http://35.232.10.14:7000/';
 const BASE_URL = 'http://127.0.0.1:5000/';
 
 @Injectable({
@@ -16,10 +12,24 @@ export class UploadService {
 
   constructor(public http: HttpClient, public afAuth: AngularFireAuth) { }
 
-  public upload(file: File)  {
+  public uploadForGAN(file: File)  {
     const formData: FormData = new FormData();
     formData.append('image', file);
-    return this.http.post(BASE_URL + 'maskImage', formData);
+    return this.http.post(BASE_URL + 'test', formData);
+  }
+
+  public uploadForMask(file: File)  {
+    const formData: FormData = new FormData();
+    formData.append('image', file);
+    return this.http.post(BASE_URL + 'test', formData);
+  }
+
+  public uploadForMerge(file: File, background: string, foreground: string) {
+    const formData: FormData = new FormData();
+    formData.append('image', file);
+    formData.append('background', background);
+    formData.append('foreground', foreground);
+    return this.http.post(BASE_URL + 'test', formData);
   }
 
 }

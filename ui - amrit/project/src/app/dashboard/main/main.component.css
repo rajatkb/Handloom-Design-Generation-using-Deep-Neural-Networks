@@ -4,12 +4,14 @@
 
 
 #uploaded-image {
-  height: 550px;
-  width: 1000px;
+  height: 90vh;
+  width: 1100px;
   position: absolute;
   z-index: 10;
-  top: 30px;
-  left: 30px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
   display: none;
 }
 
@@ -21,7 +23,7 @@
   text-align: center;
 }
 
-.control-btn {
+.upload-btn {
   padding: 10px 12px;
   margin: 5px;
   font-size: 20px;
@@ -55,24 +57,20 @@
 }
 
 #icon-1 {
-  top: 3.5%;
+  top: 4%;
 }
 #icon-2 {
-  top: 16%;
+  top: 18%;
 }
 #icon-3 {
-  top: 28.5%;
+  top: 31.5%;
 }
 #icon-4 {
-  top: 40.5%;
+  top: 44.5%;
 }
 
 #icon-5 {
-  top: 52%;
-}
-
-#icon-6 {
-  top: 65%;
+  top: 58%;
 }
 
 .text-div {
@@ -222,7 +220,7 @@ p {
 }
 
 #file-drag {
-    height: 600px;
+    height: 90vh;
 }
 #start {
     margin: 150px auto; 

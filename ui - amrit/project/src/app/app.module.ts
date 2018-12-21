@@ -24,7 +24,7 @@ import { MainComponent } from './dashboard/main/main.component';
 import { LandingComponent } from './dashboard/landing/landing.component';
 import { GalleryComponent } from './dashboard/gallery/gallery.component';
 import { FiledropDirective } from './directives/filedrop.directive';
-
+import { DataService } from './services/data.service';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyAFkZNqoZwBOQGWIyDZ_uK_v3-HiWWzInw",
@@ -72,7 +72,8 @@ const appRoutes: Routes = [
     AngularFireDatabase,
     AuthService,
     AuthGuard,
-    UploadService
+    UploadService,
+    DataService
   ],
   bootstrap: [AppComponent]
 })

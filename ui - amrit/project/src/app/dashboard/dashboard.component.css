@@ -7,10 +7,10 @@
 }
 
 #landing-div {
-    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.6);
-    padding-left: 40px; 
+    box-shadow: 0px 0px 35px rgba(238, 207, 207, 0.6);
+    /* padding-left: 40px; 
     background: rgba(20, 20, 20, 1);
-    color: #fff;
+    color: #fff; */
 }
 
 #main-div {

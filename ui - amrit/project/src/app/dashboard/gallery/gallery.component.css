@@ -5,7 +5,7 @@
     border-radius: 3px;
     min-height: 90vh; 
     max-height: 90vh;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .item {
