@@ -1,5 +1,7 @@
 # Handloom-Design-Generation-using-Deep-Neural-Networks-
-This is our 4th year Engineering final year project. It aims to use techniques like Conditional GAN , Image to Image translation , Texture and content transfer for aiding as a design tool for handloom weavers and also designers and industry as a whole.
+This is our 4th year Engineering final year project. It aims to use techniques like Conditional GAN , Image to Image translation , Texture and content transfer for aiding as a design tool for handloom weavers and also designers and industry as a whole.  
+
+
 
 ### How to use the data_builder  
 ```
@@ -19,6 +21,12 @@ optional arguments:
 ```  
 
 Run the the script at any target folder to create a dataset out of all the images inside the folder. Augmentation of image includes current colour shifting and inverting of axis and both combined. Each of the script uses a similar data builder method. You can also use the batchwise data builder for the Perceptual and GAN scripts.  
+
+# Dataset  
+
+We collected a complete orignal set of dataset for this purpose. Collected 500 around Saree where we randomly cropped to get 5 patches of design. These patches were then augmented to give us more number of dataset which is very much required for the GANs.  
+
+* to do describe dataset and give link to download 
 
 # Methodologies
 
@@ -107,4 +115,6 @@ Will give you the html , css and js files. Deploy them accordingly. Using flask 
 * ~~make python server for getting image and serving the processed image back~~
 * ~~make frontend Angular application~~
 * ~~have the python server interact with the model.predict to get output~~
-* ~~Finish the README.~~ 
+* Finish the README.  
+
+Contrib: [Meghali Nandi](https://github.com/Meghali-Nandi) , [Amrit Jha](https://github.com/amritjha)
