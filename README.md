@@ -51,7 +51,9 @@ We treat generating handloom design as an image to image translation problem whe
 
 This is the final application which shows how Neural Style tranfer can be employed into designing saree patches. Such patches can then be used as design suggestion for the rest of saree body.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/WbVoV3M"><a href="//imgur.com/WbVoV3M"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+link: [neural-loom-app , style transfer demo](https://imgur.com/a/WbVoV3M)  
+
+The original plan was though to deploy the models in the front end but the fast style transfer model computation took too much time on CPU so we refrained from something like that. Still if possible I will look for free alternative that will atleast allow us to host the app and the model together for free. Firebase ML toolkit or google cloud ml engine maybe options.
 
 
 ### Todo  
