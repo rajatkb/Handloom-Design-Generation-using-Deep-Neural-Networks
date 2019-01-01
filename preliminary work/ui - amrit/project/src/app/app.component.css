@@ -1,0 +1,12 @@
+.flash-message-container{
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    top:10px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+ }
+ 
+ .global-container {
+    overflow: hidden;
+    /* background-color: #E0F2F1; */
+ }
