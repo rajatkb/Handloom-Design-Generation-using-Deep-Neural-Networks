@@ -100,5 +100,6 @@ Will give you the html , css and js files. Deploy them accordingly. Using flask 
 * ~~Test both network for domain transfer~~
 * ~~make web based pipeline for all operation~~
 * ~~make python server for getting image and serving the processed image back~~
-* make frontend Angular application
-* have the python server interact with the model.predict to get output
+* ~~make frontend Angular application~~
+* ~~have the python server interact with the model.predict to get output~~
+* ~~Finish the README.~~ 
