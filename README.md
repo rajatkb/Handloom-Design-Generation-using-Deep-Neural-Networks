@@ -33,18 +33,21 @@ A simple attempt at genrative model to using very low amount of data for generat
 **Results:** Similar to what the DCGAN gave.
 
 ## 3. Fast Neural Style Transfer using Perceptual loss  
-This will work as a image inpaniting method of various cases of probelm.  
+This will work as a image inpaniting method of various cases of probelm.
 
-### Use natural images and artistic image to train Network, Use the network to appy style on existing Saree (Normal and Mekhala data)  
-### Use saree data to train to apply style and color of Mekhala dataset on the normal saree dataset
-### Use artistic dataset to train , and use masking technique on hand drawn image for Image-inpainting
-### Use Mekhala sador dataset for image inpainting
+Credits: [fast-neural-style-keras](https://github.com/misgod/fast-neural-style-keras)  
+The final models are from this particular scripts since, the model here was not showing any window artifact i.e having a kind of padded window to the right side of the image of the same pattern otherwise both the scripts from this and ours can be used for style transfer. 
+
+The notebooks inside the repo of fast-neural-style-transfer is for the inference and testing of single image. Try those notebook if you do not want to deploy the full application.  
+
 
 ## 4. Image to Image translation problem i.e Pix2Pix
 
 We treat generating handloom design as an image to image translation problem where take normal saree dataset will be treated as the input image and the Mekhala dataset as the target distribution which the normal dataset must be converted to. This can be tackled by following  
 ### CycleGAN  
+to be updated
 ### DiscoGAN  
+to be updated
 
 
 # App demo  
@@ -54,6 +57,35 @@ This is the final application which shows how Neural Style tranfer can be employ
 link: [neural-loom-app , style transfer demo](https://imgur.com/a/WbVoV3M)  
 
 The original plan was though to deploy the models in the front end but the fast style transfer model computation took too much time on CPU so we refrained from something like that. Still if possible I will look for free alternative that will atleast allow us to host the app and the model together for free. Firebase ML toolkit or google cloud ml engine maybe options.
+
+# Installation & Deployment  
+
+You will need these preinstalled on your server for both Perceptual Style Transfer and DiscoGAN (script is similar but the server are sepparated , since DISCOGAN is too large to deploy on one single GPU)
+* Python3
+* Numpy
+* Matplotlib
+* OpenCV
+* tensorflow with keras api (we are using the Keras api sepparately not the only available in tf)
+
+for deploying in the server set your port in the script app.py located in neural-loom-server folder  
+``
+python app.py 
+
+``
+Should do the job. Things to consider  
+* If deploying on containers or virtual machine instances make sure Firewall is allowing the traffic through the particular port you are using. We were misconfuguring a lot of times , resulting in wastage of time.  
+* The native CORS for flask failed in our usecase for some reason unexplainable. So we resorted to manually appending the headers. 
+* The **DISCOGAN** and **PERCEPTUAL NEURAL STYLE** both are to be hosted in sepparate servers hence have sepparate server scripts
+
+For the front end you need npm. So install  
+* node and npm (they come together for windows for linux may need to install separtely in some distributions)  
+
+In the neural-loom-app , go to the services and then to upload.service.ts , there edit the ip address according to your setup. 
+``
+ng build --prod
+``
+Will give you the html , css and js files. Deploy them accordingly. Using flask or http-server (npm app for deploying html project quickly)  
+
 
 
 ### Todo  
