@@ -69,7 +69,8 @@ You will need these preinstalled on your server for both Perceptual Style Transf
 
 for deploying in the server set your port in the script app.py located in neural-loom-server folder  
 
-``
+``  
+
 python app.py 
 
 ``  
