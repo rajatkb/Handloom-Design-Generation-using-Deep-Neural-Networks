@@ -68,10 +68,12 @@ You will need these preinstalled on your server for both Perceptual Style Transf
 * tensorflow with keras api (we are using the Keras api sepparately not the only available in tf)
 
 for deploying in the server set your port in the script app.py located in neural-loom-server folder  
+
 ``
 python app.py 
 
-``
+``  
+
 Should do the job. Things to consider  
 * If deploying on containers or virtual machine instances make sure Firewall is allowing the traffic through the particular port you are using. We were misconfuguring a lot of times , resulting in wastage of time.  
 * The native CORS for flask failed in our usecase for some reason unexplainable. So we resorted to manually appending the headers. 
@@ -80,10 +82,13 @@ Should do the job. Things to consider
 For the front end you need npm. So install  
 * node and npm (they come together for windows for linux may need to install separtely in some distributions)  
 
-In the neural-loom-app , go to the services and then to upload.service.ts , there edit the ip address according to your setup. 
+In the neural-loom-app , go to the services and then to upload.service.ts , there edit the ip address according to your setup.   
+
 ``
 ng build --prod
-``
+``  
+
+
 Will give you the html , css and js files. Deploy them accordingly. Using flask or http-server (npm app for deploying html project quickly)  
 
 
