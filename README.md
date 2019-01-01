@@ -69,11 +69,10 @@ You will need these preinstalled on your server for both Perceptual Style Transf
 
 for deploying in the server set your port in the script app.py located in neural-loom-server folder  
 
+``
+python app.py
 ``  
 
-python app.py 
-
-``  
 
 Should do the job. Things to consider  
 * If deploying on containers or virtual machine instances make sure Firewall is allowing the traffic through the particular port you are using. We were misconfuguring a lot of times , resulting in wastage of time.  
