@@ -1,0 +1,84 @@
+
+ <div class="upload-section">
+    <div class="row">
+      <div class="col-md-1 sidenav"> 
+
+          <div class="button-div" (click)="gallerySelected = true">
+            <div class="icon-div">
+              <i class="fa icons fa-picture-o" (mouseenter)="onIconHover($event)" (mouseleave)="onIconLeave($event)"></i>
+            </div>
+            <div class="text-div" [ngClass]="{onHover: icon1Hovered == true}">
+              <button class="icon-text button" id="icon-1">Go to Gallery</button>
+            </div>
+          </div><br>
+
+          <div class="button-div" (click)="gallerySelected = false">
+            <div class="icon-div">
+              <i class="fa icons fa-home icons-additional" (mouseenter)="onIconHover($event)" (mouseleave)="onIconLeave($event)"></i>
+            </div>
+            <div class="text-div" [ngClass]="{onHover: icon2Hovered == true}">
+              <button class="icon-text button" id="icon-2">Go to Upload panel</button>
+            </div>
+          </div><br>
+
+        <div class="button-div" (click)="selectedGANIcon($event)">
+          <div class="icon-div">
+            <i class="fa icons fa-paint-brush icons-exception" (mouseenter)="onIconHover($event)" (mouseleave)="onIconLeave($event)"></i>
+          </div>
+          <div class="text-div" [ngClass]="{onHover: icon3Hovered == true}">
+            <button class="icon-text button" id="icon-3">Colour via GAN</button>
+          </div>
+        </div><br>
+
+        <div class="button-div" (click)="selectedMaskIcon($event)">
+          <div class="icon-div">
+            <i class="fa icons special-class icons-exception" [ngClass]="{'fa-file-code-o': isMaskActive === false, 'fa-undo': isMaskActive === true }" (mouseenter)="onIconHover($event)" (mouseleave)="onIconLeave($event)"></i>
+          </div>
+          <div class="text-div" [ngClass]="{onHover: icon4Hovered == true}">
+            <button class="icon-text button" id="icon-4">{{ maskButtonCaption }}</button>
+          </div>
+        </div><br>
+        
+        <div class="button-div" (click)="onLogout()">
+          <div class="icon-div">
+            <i class="fa icons fa-sign-out icons-additional" (mouseenter)="onIconHover($event)" (mouseleave)="onIconLeave($event)"></i>
+          </div>
+          <div class="text-div" [ngClass]="{onHover: icon5Hovered == true}">
+            <button class="icon-text button" id="icon-5">Log Out</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-11 upload-div" appFiledrop (hovered)="toggleHover($event)" (dropped)="onImageSelect($event)" [class.hovering]="isHovering">
+          <app-gallery *ngIf="gallerySelected"></app-gallery> 
+          <div *ngIf="!gallerySelected">
+            <img *ngIf="imageSelected" [src]="uploadedImageURL" height="200" id="uploaded-image" [ngClass]="{onImageSelect: imageSelected == true}"/>
+            <form id="file-upload-form" class="uploader">
+              <input id="file-upload" type="file" name="fileUpload" accept="image/*" (change)="onImageSelect($event)"/>
+          
+              <label for="file-upload" id="file-drag">
+                
+                <div id="start">
+                  <i class="fa fa-download" aria-hidden="true" id="upload-icon"></i>
+                  <div id="upload-text">Select a file or drag here</div>
+                  <div id="notimage" class="hidden">Please select an image</div>
+                  <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+                </div>
+                <div id="response" class="hidden">
+                  <div id="messages"></div>
+                  <progress class="progress" id="file-progress" value="0">
+                    <span>0</span>%
+                  </progress>
+                </div>
+              </label>
+            </form>
+            <div class="button-controls">
+              <button class="upload-btn"  (click)="uploadToFirebase()">Upload to Firebase</button>
+            </div> 
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  

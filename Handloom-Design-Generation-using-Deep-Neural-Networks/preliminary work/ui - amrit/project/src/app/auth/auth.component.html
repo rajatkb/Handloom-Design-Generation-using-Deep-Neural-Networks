@@ -1,0 +1,48 @@
+<div class="auth-container">
+  <div class="app-title">
+    <h1>NEURAL LOOM DESIGN</h1>
+  </div>
+  <div class="login-signup" id="login" (click)="onLoginSelect($event)" [ngClass]="{'l-attop': loginSelected === true, 'l-atbottom': signupSelected === true}">
+    <div class="login-signup-title">LOG ME IN</div>
+    <div class="login-signup-content">
+      <div class="input-name">
+          <h2>Email ID</h2>
+      </div>
+      <input type="email" name="username" value="" class="field-input" [(ngModel)]="l_email"/>
+      <div class="input-name input-margin">
+        <h2>Password</h2>
+      </div>
+      <input type="password" name="password" value="" class="field-input" [(ngModel)]="l_password"/>
+        <div class="input-r">
+          <div class="check-input">
+            <input type="checkbox" id="remember-me-2" name="rememberme" value="" class="checkme">
+            <label class="remmeberme-blue" for="remember-me-2"></label>
+          </div>
+          <div class="rememberme"><label for="remember-me-2">Remember Me</label></div>
+        </div>
+        <button class="submit-btn" (click)="onLogin()">Login</button>
+        <div class="forgot-pass">
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+  </div>
+      
+  <div class="login-signup" id="signup" (click)="onSignupSelect($event)" [ngClass]="{'s-attop': signupSelected === true, 's-atbottom': loginSelected === true}">
+    <div class="login-signup-title">REGISTER ME</div>
+    <div class="login-signup-content">
+      <div class="input-name">
+        <h2>Name</h2>
+      </div>
+      <input type="text" name="name" value="" class="field-input" [(ngModel)]="s_name"/>
+      <div class="input-name input-margin">
+        <h2>Email ID</h2>
+      </div>
+      <input type="text" name="email" value="" class="field-input" [(ngModel)]="s_email"/>
+      <div class="input-name input-margin">
+        <h2>Password</h2>
+      </div>
+      <input type="password" name="password" value="" class="field-input" [(ngModel)]="s_password"/>
+      <button class="submit-btn" (click)="onSignup()">Sign Up</button>
+    </div>
+  </div>
+</div>

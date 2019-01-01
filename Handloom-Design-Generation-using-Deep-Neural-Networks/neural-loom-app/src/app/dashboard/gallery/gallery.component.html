@@ -1,0 +1,6 @@
+<div class="gallery-container">
+  <div id="loader" class='loader-background' *ngIf="isLoading">
+      <div class="loader">App Loading...</div>
+  </div>
+  <div class="item" *ngFor="let url of imagesURL"><img src={{url}}></div>
+</div>

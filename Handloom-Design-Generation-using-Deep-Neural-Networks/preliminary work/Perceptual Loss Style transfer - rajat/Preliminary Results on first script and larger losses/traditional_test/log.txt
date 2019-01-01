@@ -1,0 +1,3 @@
+--lambda_tv 1e-6 --lambda_content 1e-2 --lambda_texture 1e-6 
+
+parameters

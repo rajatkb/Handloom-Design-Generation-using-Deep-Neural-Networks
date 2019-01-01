@@ -1,0 +1,1 @@
+python main.py --exp_name traditional_test7 --bs 4 --epoch 100 --lr 1e-3 --data "../ms_coco_npy" --lambda_tv 1e-6 --lambda_content 1e-2 --lambda_texture 1e-6 --content_image traditional7.jpg --texture_image traditional7.jpg
