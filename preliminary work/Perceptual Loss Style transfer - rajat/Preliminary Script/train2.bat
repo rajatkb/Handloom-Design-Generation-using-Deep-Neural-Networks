@@ -1,1 +1,0 @@
-python main2.py --exp_name exp1 --bs 4 --epoch 50 --lr 1e-3 --data "../ms_coco_npy" --lambda_tv 1e-6 --lambda_content 1 --lambda_texture 0 --texture_image test_content.jpeg --chk 0
