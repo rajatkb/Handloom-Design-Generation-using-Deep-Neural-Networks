@@ -48,6 +48,16 @@ The final models are from this particular scripts since, the model here was not 
 
 The notebooks inside the repo of fast-neural-style-transfer is for the inference and testing of single image. Try those notebook if you do not want to deploy the full application.  
 
+If you want to retrain running the `` train.py `` or the ``train.sh`` (in case of prelim work scripts) will do the job. The shell script is configurable.  
+
+When trying fast neural style transfer the network was trained using MS-COCO validation dataset which is smaller than the actual dataset. Here are the few of the results which were obtained by combining two different style.  
+
+#### Combining two style 
+
+![handloom2 combined handloom1 , applied on subject saree]("preliminary work/Perceptual Loss Style transfer - rajat/Final Result from the 2nd script/combined/combined/handloom2handloom1.jpg")
+
+
+
 
 ## 4. Image to Image translation problem i.e Pix2Pix
 
