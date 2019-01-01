@@ -26,23 +26,18 @@ import { GalleryComponent } from './dashboard/gallery/gallery.component';
 import { FiledropDirective } from './directives/filedrop.directive';
 import { DataService } from './services/data.service';
 
+// put the api keys here
+
 export const firebaseConfig = {
-  apiKey: "AIzaSyAFkZNqoZwBOQGWIyDZ_uK_v3-HiWWzInw",
-  authDomain: "project7sem-ef250.firebaseapp.com",
-  databaseURL: "https://project7sem-ef250.firebaseio.com",
-  projectId: "project7sem-ef250",
-  storageBucket: "project7sem-ef250.appspot.com",
-  messagingSenderId: "458590414263"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: ""
 };
 
-// export const firebaseConfig = {
-//   apiKey: "AIzaSyBuhGqNyqJ0mtrd2lmBK6I545Msl7_H66s",
-//   authDomain: "neural-loom-design.firebaseapp.com",
-//   databaseURL: "https://neural-loom-design.firebaseio.com",
-//   projectId: "neural-loom-design",
-//   storageBucket: "neural-loom-design.appspot.com",
-//   messagingSenderId: "931335668582"
-// };
+
 
 const appRoutes: Routes = [
   {path:'',component: AuthComponent},
