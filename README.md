@@ -102,6 +102,7 @@ In the neural-loom-app , go to the services and then to upload.service.ts , ther
 ng build --prod
 ``  
 
+**hardware:** We deployed on Google Cloud platform VM with Nvidia P100 GPU 16GB VRAM, i5 4 core , 16GB RAM. The client can be any simple rustbucket. 
 
 Will give you the html , css and js files. Deploy them accordingly. Using flask or http-server (npm app for deploying html project quickly)  
 
