@@ -45,6 +45,23 @@ The dataset comprises of two collections of images - normal sarees and handloom 
 	<img src="docs/sample-dataset/normal/img_69663.jpg" height="120px" width="120px" />
 	<img src="docs/sample-dataset/normal/img_71453.jpg" height="120px" width="120px" />
   </div>
+  <div>
+    <h4>Handloom sarees</h4>
+      	<img src="docs/sample-dataset/handloom/img_26850.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_31665.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_34590.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_40145.jpg" height="120px" width="120px" />
+      	<img src="docs/sample-dataset/handloom/img_44440.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_828414.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_55880.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_61951.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_65263.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_86754.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_132981.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_270633.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_284975.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_364907.jpg" height="120px" width="120px" />
+  </div>
 </div>
 
 <strong>Normal Sarees</strong>
@@ -67,7 +84,7 @@ The dataset comprises of two collections of images - normal sarees and handloom 
   <li>Size of Collection: 18 MB</li>
 </ul>
 
-The dataset can be downloaded from <a href="https://drive.google.com/open?id=1V_DcXJ50QYV9nEqvq7fqKno_lhbSPdBM">here</a>. New images are being included to the dataset.
+The dataset can be downloaded from <a target="_blank" href="https://drive.google.com/open?id=1V_DcXJ50QYV9nEqvq7fqKno_lhbSPdBM">here</a>. New images are being included to the dataset.
 
 # Methodologies
 
