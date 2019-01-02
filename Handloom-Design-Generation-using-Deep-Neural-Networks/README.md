@@ -1,7 +1,7 @@
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Frajatkb%2FHandloom-Design-Generation-using-Deep-Neural-Networks)  [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) 
 # Handloom-Design-Generation-using-Deep-Neural-Networks-
-This is our 4th year Engineering final year project. It aims to use techniques like Conditional GAN , Image to Image translation , Texture and content transfer for aiding as a design tool for handloom weavers and also designers and industry as a whole.  
-
+This is our 4th year Engineering final year project. It aims to use techniques like Conditional GAN , Image to Image translation , Texture and content transfer for aiding as a design tool for handloom weavers and also designers and industry as a whole. 
+<p><a href="https://imgur.com/a/WbVoV3M" target="_blank">This demo video</a> presents an overview of the design tool developed in the project.</p>
 
 
 ### How to use the data_builder  
