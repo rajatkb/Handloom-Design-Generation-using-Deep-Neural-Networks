@@ -44,7 +44,7 @@ The dataset comprises of two collections of images - normal sarees and handloom 
 	<img src="docs/sample-dataset/normal/img_32027.jpg" height="120px" width="120px" />
 	<img src="docs/sample-dataset/normal/img_69663.jpg" height="120px" width="120px" />
 	<img src="docs/sample-dataset/normal/img_71453.jpg" height="120px" width="120px" />
-  </div>
+  </div><br>
   <div>
     <h4>Handloom sarees</h4>
       	<img src="docs/sample-dataset/handloom/img_26850.jpg" height="120px" width="120px" />
@@ -63,7 +63,7 @@ The dataset comprises of two collections of images - normal sarees and handloom 
 	<img src="docs/sample-dataset/handloom/img_364907.jpg" height="120px" width="120px" />
   </div>
 </div>
-
+<br><br>
 <strong>Normal Sarees</strong>
 <ul>
   <li>Number of Images: 580</li>
