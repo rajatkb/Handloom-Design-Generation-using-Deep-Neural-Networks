@@ -27,6 +27,17 @@ We collected a complete orignal set of dataset for this purpose. Collected over 
 
 The dataset comprises of two collections of images - normal sarees and handloom sarees. The exact details about the collections are stated below.
 
+<div>
+  <div>
+    <h4>Normal sarees</h4>
+      <img src="docs/sample-dataset/normal/img_31484.jpg" class="sample-image" />
+			<img src="docs/sample-dataset/normal/img_7476.jpg" class="sample-image" />
+			<img src="docs/sample-dataset/normal/img_8230.jpg" class="sample-image" />
+			<img src="docs/sample-dataset/normal/img_12216.jpg" class="sample-image" />
+      <img src="docs/sample-dataset/normal/img_18062.jpg" class="sample-image" />
+  </div>
+</div>
+
 <strong>Normal Sarees</strong>
 <ul>
   <li>Number of Images: 580</li>
