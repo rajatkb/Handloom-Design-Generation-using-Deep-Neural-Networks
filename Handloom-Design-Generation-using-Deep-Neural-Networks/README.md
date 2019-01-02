@@ -25,7 +25,31 @@ Run the the script at any target folder to create a dataset out of all the image
 
 # Dataset  
 
-We collected a complete orignal set of dataset for this purpose. Collected 500 around Saree where we randomly cropped to get 5 patches of design. These patches were then augmented to give us more number of dataset which is very much required for the GANs.  
+We collected a complete orignal set of dataset for this purpose. Collected over 500 sarees' images where we randomly cropped to get 5 patches of design. These patches were then augmented to give us more number of dataset which is very much required for the GANs. 
+
+The dataset comprises of two collections of images - normal sarees and handloom sarees. The exact details about the collections are stated below.
+
+<strong>Normal Sarees</strong>
+<ul>
+  <li>Number of Images: 580</li>
+  <li>Number of Images (after crop): 2900</li>
+  <li>Number of Images (after augmentation): 26100</li>
+  <li>Image Resolution: 256 X 256 X 3</li>
+  <li>Image Format: RGB - JPG/JPEG</li>
+  <li>Size of Collection: 200 MB</li>
+</ul>
+
+<strong>Handloom Sarees</strong>
+<ul>
+  <li>Number of Images: 33</li>
+  <li>Number of Images (after crop): 165</li>
+  <li>Number of Images (after augmentation): 1185</li>
+  <li>Image Resolution: 256 X 256 X 3</li>
+  <li>Image Format: RGB - JPG/JPEG</li>
+  <li>Size of Collection: 18 MB</li>
+</ul>
+
+The dataset can be downloaded from <a href="">here</a>. New images are being included to the dataset.
 
 * to do describe dataset and give link to download 
 
