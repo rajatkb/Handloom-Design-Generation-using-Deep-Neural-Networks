@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Quicksand");
+
+body {
+	background-color: rgb(240, 240, 240);
+}
+
+.page-container {
+	padding: 20px 60px; 
+	font-family: sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+.contributor-name, .institute {
+	font-size: 25px;
+	margin: 25px 40px;
+}
+
+.contributors, .institute {
+	margin-bottom: 40px;
+}
+
+.sample-dataset {
+	min-height: 600px;
+	min-width: 90%;
+}
+
+.dataset-label {
+	min-height: 30px;
+}
+
+.normal-saree, .handloom-saree {
+	min-height: 600px;
+	width: 49.5%;
+	display: inline-block;
+}
+
+.row-div {
+	text-align: left;
+	min-height: 132px;
+	padding: 0px;
+}
+
+.sample-image {
+	height: 132px;
+	width: 132px;
+}
+
+.dataset-label {
+	font-weight: 700;
+}
+
+.dataset-label, .image-footer {
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.dataset-intro, .dataset-desc, .dataset-appl {
+	text-align: justify;
+}
+
+.desc-list {
+	margin: 10px auto;
+}
