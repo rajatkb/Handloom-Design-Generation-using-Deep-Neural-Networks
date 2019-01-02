@@ -51,8 +51,6 @@ The dataset comprises of two collections of images - normal sarees and handloom 
 
 The dataset can be downloaded from <a href="https://drive.google.com/open?id=1V_DcXJ50QYV9nEqvq7fqKno_lhbSPdBM">here</a>. New images are being included to the dataset.
 
-* to do describe dataset and give link to download 
-
 # Methodologies
 
 ## 1. Simple GAN 
