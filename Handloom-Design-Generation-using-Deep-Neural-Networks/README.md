@@ -119,7 +119,9 @@ We treat generating handloom design as an image to image translation problem whe
 #### Saree2Handloom
 
 The saree2handloom model was trained for about 420 epochs on a batch size of one as recommended in the CycleGAN paper. The model quickly optimized upon the cycle consistency loss as the results showed impressive reconstruction of images back to the original domain from as early as the tenth epoch. 
+
 On further training, the model produced results showing that it was able to recognize patches of colour segments as well as the design patterns in both the domain as it was learning to fill the patches with colours from the target domain during the translations. The model was trained for more number of epochs in the hope of better translations leading to generation of unseen textures, but such targets were never met.
+
 <div>
 	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/412_600.png" height="270px" width="400px" />
 	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/415_800.png" height="270px" width="400px" />
