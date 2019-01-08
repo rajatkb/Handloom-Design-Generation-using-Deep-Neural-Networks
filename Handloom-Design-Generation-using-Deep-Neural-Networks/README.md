@@ -134,18 +134,18 @@ We treat generating handloom design as an image to image translation problem whe
 
 #### Coco2Handloom
 <div>
-	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/412_600.png" height="270px" width="400px" />
-	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/415_800.png" height="270px" width="400px" />
+	<img src="preliminary work/CycleGAN - amrit/results/coco2handloom/latest/131_800.png" height="270px" width="400px" />
+	<img src="preliminary work/CycleGAN - amrit/results/coco2handloom/latest/131_1000.png" height="270px" width="400px" />
 </div>
 <br />
 <div>
-	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/416_1000.png" height="270px" width="400px" />
-	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/418_600.png" height="270px" width="400px" />
+	<img src="preliminary work/CycleGAN - amrit/results/coco2handloom/latest/132_200.png" height="270px" width="400px" />
+	<img src="preliminary work/CycleGAN - amrit/results/coco2handloom/latest/132_600.png" height="270px" width="400px" />
 </div>
 <br />
 <div>
-	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/419_800.png" height="270px" width="400px" />
-	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/408_600.png" height="270px" width="400px" />
+	<img src="preliminary work/CycleGAN - amrit/results/coco2handloom/latest/132_800.png" height="270px" width="400px" />
+	<img src="preliminary work/CycleGAN - amrit/results/coco2handloom/latest/132_1000.png" height="270px" width="400px" />
 </div>
 
 ### DiscoGAN  
