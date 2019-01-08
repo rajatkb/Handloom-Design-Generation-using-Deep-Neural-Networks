@@ -2,6 +2,11 @@
 # Handloom-Design-Generation-using-Deep-Neural-Networks-
 This is our 4th year Engineering final year project. It aims to use techniques like Conditional GAN , Image to Image translation , Texture and content transfer for aiding as a design tool for handloom weavers and also designers and industry as a whole.  
 
+
+Contrib: [Meghali Nandi](https://github.com/Meghali-Nandi) , [Amrit Jha](https://github.com/amritjha)  
+
+
+
 ![demo gif](https://i.imgur.com/aU7noHS.gif)  
 Demo
 
@@ -231,4 +236,4 @@ Will give you the html , css and js files. Deploy them accordingly. Using flask 
 * ~~have the python server interact with the model.predict to get output~~
 * Finish the README.  
 
-Contrib: [Meghali Nandi](https://github.com/Meghali-Nandi) , [Amrit Jha](https://github.com/amritjha)
+
