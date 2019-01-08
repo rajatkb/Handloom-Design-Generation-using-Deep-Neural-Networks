@@ -32,7 +32,7 @@ The dataset comprises of two collections of images - normal sarees and handloom 
 <div>
   <div>
     <h4>Normal sarees</h4>
-      	<img src="docs/sample-dataset/normal/img_31484.jpg" height="120px" width="120px" />
+      	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_31484.jpg" height="120px" width="120px" />
 	<img src="docs/sample-dataset/normal/img_7476.jpg" height="120px" width="120px" />
 	<img src="docs/sample-dataset/normal/img_8230.jpg" height="120px" width="120px" />
 	<img src="docs/sample-dataset/normal/img_12216.jpg" height="120px" width="120px" />
