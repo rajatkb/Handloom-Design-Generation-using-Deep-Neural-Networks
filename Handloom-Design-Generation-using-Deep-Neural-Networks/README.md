@@ -138,6 +138,11 @@ On further training, the model produced results showing that it was able to reco
 </div>
 
 #### Coco2Handloom
+
+Amazed by the results produced by CycleGAN when employed for translations between images of abruptly different domains, the CycleGAN technique was employed to train and build a "natural images to handloom" model which would have generated handloom cloth designs from natural image samples.
+
+The model was trained with two domain of images - the MS-COCO validation set (2017) and our handloom image samples. We observed the results obtained from a traning of over 130 epochs on a batch size of one. The results highlighted the sparsity of data in the handloom images collection as most of the translations coloured the natural image to white (the dominant colour in handloom cloth). Clearly, for hoping any success with the model, we need to first get rid of the sparsity and other inherent flaws in our dataset.
+
 <div>
 	<img src="preliminary work/CycleGAN - amrit/results/coco2handloom/latest/131_800.png" height="270px" width="400px" />
 	<img src="preliminary work/CycleGAN - amrit/results/coco2handloom/latest/131_1000.png" height="270px" width="400px" />
