@@ -117,9 +117,9 @@ When trying fast neural style transfer the network was trained using MS-COCO val
 We treat generating handloom design as an image to image translation problem where take normal saree dataset will be treated as the input image and the Mekhala dataset as the target distribution which the normal dataset must be converted to. This can be tackled by following  
 ### CycleGAN  
 <div>
-	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/412_600.png" height="240px" width="330px" />
-	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/414_800.png" height="240px" width="330px" />
-	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/415_800.png" height="240px" width="330px" />
+	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/412_600.png" height="240px" width="400px" />
+	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/414_800.png" height="240px" width="400px" />
+	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/415_800.png" height="240px" width="400px" />
 </div>
 <br />
 <div>
