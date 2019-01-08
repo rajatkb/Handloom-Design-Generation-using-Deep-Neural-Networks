@@ -124,9 +124,12 @@ We treat generating handloom design as an image to image translation problem whe
 <div>
 	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/416_1000.png" height="270px" width="400px" />
 	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/418_600.png" height="270px" width="400px" />
-	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/419_800.png" height="270px" width="400px" />
 </div>
-
+<br />
+<div>
+	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/419_800.png" height="270px" width="400px" />
+	<img src="preliminary work/CycleGAN - amrit/results/normal2handloom/latest/408_600.png" height="270px" width="400px" />
+</div>
 ### DiscoGAN  
 to be updated
 
