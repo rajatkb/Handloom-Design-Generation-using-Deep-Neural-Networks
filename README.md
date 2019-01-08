@@ -27,7 +27,67 @@ Run the the script at any target folder to create a dataset out of all the image
 
 We collected a complete orignal set of dataset for this purpose. Collected 500 around Saree where we randomly cropped to get 5 patches of design. These patches were then augmented to give us more number of dataset which is very much required for the GANs.  
 
-* to do describe dataset and give link to download 
+The dataset comprises of two collections of images - normal sarees and handloom sarees. The exact details about the collections are stated below.
+
+<div>
+  <div>
+    <h4>Normal sarees</h4>
+      	<img src="docs/sample-dataset/normal/img_31484.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_7476.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_8230.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_12216.jpg" height="120px" width="120px" />
+      	<img src="docs/sample-dataset/normal/img_18062.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_18535.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_19645.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_23335.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_24787.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_26577.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_28687.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_32027.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_69663.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/normal/img_71453.jpg" height="120px" width="120px" />
+  </div><br>
+  <div>
+    <h4>Handloom sarees</h4>
+      	<img src="docs/sample-dataset/handloom/img_26850.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_31665.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_34590.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_40145.jpg" height="120px" width="120px" />
+      	<img src="docs/sample-dataset/handloom/img_44440.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_828414.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_55880.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_61951.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_65263.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_86754.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_132981.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_270633.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_284975.jpg" height="120px" width="120px" />
+	<img src="docs/sample-dataset/handloom/img_364907.jpg" height="120px" width="120px" />
+  </div>
+</div>
+<br><br>
+<strong>Normal Sarees</strong>
+<ul>
+  <li>Number of Images: 580</li>
+  <li>Number of Images (after crop): 2900</li>
+  <li>Number of Images (after augmentation): 26100</li>
+  <li>Image Resolution: 256 X 256 X 3</li>
+  <li>Image Format: RGB - JPG/JPEG</li>
+  <li>Size of Collection: 200 MB</li>
+</ul>
+
+<strong>Handloom Sarees</strong>
+<ul>
+  <li>Number of Images: 33</li>
+  <li>Number of Images (after crop): 165</li>
+  <li>Number of Images (after augmentation): 1185</li>
+  <li>Image Resolution: 256 X 256 X 3</li>
+  <li>Image Format: RGB - JPG/JPEG</li>
+  <li>Size of Collection: 18 MB</li>
+</ul>
+
+The dataset can be downloaded from <a target="_blank" href="https://drive.google.com/open?id=1V_DcXJ50QYV9nEqvq7fqKno_lhbSPdBM">here</a>. New images are being included to the dataset.
+
 
 # Methodologies
 
