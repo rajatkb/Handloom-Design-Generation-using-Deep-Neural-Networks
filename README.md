@@ -33,36 +33,36 @@ The dataset comprises of two collections of images - normal sarees and handloom 
   <div>
     <h4>Normal sarees</h4>
       	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_31484.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_7476.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_8230.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_12216.jpg" height="120px" width="120px" />
-      	<img src="docs/sample-dataset/normal/img_18062.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_18535.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_19645.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_23335.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_24787.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_26577.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_28687.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_32027.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_69663.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/normal/img_71453.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_7476.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_8230.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_12216.jpg" height="120px" width="120px" />
+      	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_18062.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_18535.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_19645.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_23335.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_24787.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_26577.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_28687.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_32027.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_69663.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/normal/img_71453.jpg" height="120px" width="120px" />
   </div><br>
   <div>
     <h4>Handloom sarees</h4>
-      	<img src="docs/sample-dataset/handloom/img_26850.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_31665.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_34590.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_40145.jpg" height="120px" width="120px" />
-      	<img src="docs/sample-dataset/handloom/img_44440.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_828414.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_55880.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_61951.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_65263.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_86754.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_132981.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_270633.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_284975.jpg" height="120px" width="120px" />
-	<img src="docs/sample-dataset/handloom/img_364907.jpg" height="120px" width="120px" />
+      	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_26850.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_31665.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_34590.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_40145.jpg" height="120px" width="120px" />
+      	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_44440.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_828414.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_55880.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_61951.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_65263.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_86754.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_132981.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_270633.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_284975.jpg" height="120px" width="120px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/docs/sample-dataset/handloom/img_364907.jpg" height="120px" width="120px" />
   </div>
 </div>
 <br><br>
@@ -119,7 +119,48 @@ When trying fast neural style transfer the network was trained using MS-COCO val
 
 We treat generating handloom design as an image to image translation problem where take normal saree dataset will be treated as the input image and the Mekhala dataset as the target distribution which the normal dataset must be converted to. This can be tackled by following  
 ### CycleGAN  
-to be updated
+#### Saree2Handloom
+
+The saree2handloom model was trained for about 420 epochs on a batch size of one as recommended in the CycleGAN paper. The model quickly optimized upon the cycle consistency loss as the results showed impressive reconstruction of images back to the original domain from as early as the tenth epoch. 
+
+On further training, the model produced results showing that it was able to recognize patches of colour segments as well as the design patterns in both the domain as it was learning to fill the patches with colours from the target domain during the translations. The model was trained for more number of epochs in the hope of better translations leading to generation of unseen textures, but such targets were never met.
+
+<div>
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/normal2handloom/latest/412_600.png" height="270px" width="400px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/normal2handloom/latest/415_800.png" height="270px" width="400px" />
+</div>
+<br />
+<div>
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/normal2handloom/latest/416_1000.png" height="270px" width="400px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/normal2handloom/latest/418_600.png" height="270px" width="400px" />
+</div>
+<br />
+<div>
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/normal2handloom/latest/419_800.png" height="270px" width="400px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/normal2handloom/latest/408_600.png" height="270px" width="400px" />
+</div>
+
+#### Coco2Handloom
+
+Amazed by the results produced by CycleGAN when employed for translations between images of abruptly different domains, the CycleGAN technique was employed to train and build a "natural images to handloom" model which would have generated handloom cloth designs from natural image samples.
+
+The model was trained with two domain of images - the MS-COCO validation set (2017) and our handloom image samples. We observed the results obtained from a traning of over 130 epochs on a batch size of one. The results highlighted the sparsity of data in the handloom images collection as most of the translations coloured the natural image to white (the dominant colour in handloom cloth). Clearly, for hoping any success with the model, we need to first get rid of the sparsity and other inherent flaws in our dataset.
+
+<div>
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/coco2handloom/latest/131_800.png" height="270px" width="400px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/coco2handloom/latest/131_1000.png" height="270px" width="400px" />
+</div>
+<br />
+<div>
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/coco2handloom/latest/132_200.png" height="270px" width="400px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/coco2handloom/latest/132_600.png" height="270px" width="400px" />
+</div>
+<br />
+<div>
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/coco2handloom/latest/132_800.png" height="270px" width="400px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/CycleGAN - amrit/results/coco2handloom/latest/132_1000.png" height="270px" width="400px" />
+</div>
+
 ### DiscoGAN  
 to be updated
 
