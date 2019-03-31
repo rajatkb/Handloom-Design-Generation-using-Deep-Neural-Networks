@@ -3,8 +3,22 @@
 This is our 4th year Engineering final year project. It aims to use techniques like Conditional GAN , Image to Image translation , Texture and content transfer for aiding as a design tool for handloom weavers and also designers and industry as a whole.  
 
 
-Contrib: [Meghali Nandi](https://github.com/Meghali-Nandi) , [Amrit Jha](https://github.com/amritjha)  
+Contrib: [Meghali Nandi](https://github.com/Meghali-Nandi) , [Amrit Jha](https://github.com/amritjha)    
 
+If you find this work exciting or have somehow inspired your work , feel free to cite us
+
+```
+@misc{handloomGeneration,
+  author = {{Bhattacharjee}, R. K and  {Nandi}, M. and  {Jha}, A..},
+  title = {Handloom  Design  Generation  using  Deep Neural Networks},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/rajatkb/Handloom-Design-Generation-using-Deep-Neural-Networks}},
+  commit = {3a2e05caef787dbc34f473ccf1338e730dd1c76e}
+}
+
+```
 
 
 ![demo gif](https://i.imgur.com/aU7noHS.gif)  
