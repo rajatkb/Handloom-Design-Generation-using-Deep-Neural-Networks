@@ -194,13 +194,13 @@ The model was trained with two domain of images - the MS-COCO validation set (20
 The DiscoGAN gave more promising results when compared to other methods , The discoGAN was was used to convert hand drawn threasholded geomteric strcutures as base template which will then be colored in way that it looks like a traditional handloom or generic saree. The input to the model would be a standard binary mask of pattern and output will be a colored design. The model was trained on the entire Saree dataset.
 
 <div>
-	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/blob/master/Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/DiscoGAN - meghali/sample_images/0_300.png" width="400px" />
-	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/blob/master/Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/DiscoGAN - meghali/sample_images/0_350.png" height="270px" width="400px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/DiscoGAN - meghali/sample_images/0_300.png" width="400px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/DiscoGAN - meghali/sample_images/0_350.png" height="270px" width="400px" />
 </div>
 
 <div>
-	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/blob/master/Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/DiscoGAN - meghali/sample_images/2_300.png" width="400px" />
-	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/blob/master/Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/DiscoGAN - meghali/sample_images/2_400.png" height="270px" width="400px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/DiscoGAN - meghali/sample_images/2_300.png" width="400px" />
+	<img src="Handloom-Design-Generation-using-Deep-Neural-Networks/preliminary work/DiscoGAN - meghali/sample_images/2_400.png" height="270px" width="400px" />
 </div>
 
 
